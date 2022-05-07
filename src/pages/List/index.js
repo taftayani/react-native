@@ -1,11 +1,12 @@
 import {StyleSheet, Text, View} from 'react-native';
 import React from 'react';
 import {Styles} from '../../components/assets/body';
+import Headers from '../../components/Elements/Header/header';
 
 const WishList = () => {
   return (
-    <View style={Styles.body}>
-      <Text>WishList</Text>
+    <View>
+      <Headers />
     </View>
   );
 };

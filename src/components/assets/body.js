@@ -39,7 +39,8 @@ export const Styles = StyleSheet.create({
     textAlign: 'center',
   },
   imgIconTab: {
-    width: 20,
-    height: 20,
+    width: 22,
+    height: 22,
+    marginBottom: 10,
   },
 });

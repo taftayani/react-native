@@ -17,16 +17,28 @@ const TabNav = () => {
     <Tab.Navigator
       initialRouteName="Home"
       tabBar={props => <ButtomNav {...props} />}>
-      <Tab.Screen name="Stories" component={Stories} />
-      <Tab.Screen name="News" component={News} />
+      <Tab.Screen
+        name="Stories"
+        component={Stories}
+        options={{headerShown: false}}
+      />
+      <Tab.Screen name="News" component={News} options={{headerShown: false}} />
       <Tab.Screen
         name="Home"
         component={Homepage}
         options={{headerShown: false}}
       />
 
-      <Tab.Screen name="List" component={WishList} />
-      <Tab.Screen name="Profile" component={Profile} />
+      <Tab.Screen
+        name="List"
+        component={WishList}
+        options={{headerShown: false}}
+      />
+      <Tab.Screen
+        name="Profile"
+        component={Profile}
+        options={{headerShown: false}}
+      />
     </Tab.Navigator>
   );
 };

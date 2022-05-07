@@ -110,9 +110,11 @@ const ButtomNav = ({state, descriptors, navigation}) => {
             testID={options.tabBarTestID}
             onPress={onPress}
             onLongPress={onLongPress}
-            style={{flex: 1}}>
+            style={styles.containerButton}>
             {Icons(label, isFocused)}
-            <Text style={{color: isFocused ? '#673ab7' : '#222'}}>{label}</Text>
+            <Text style={{color: !isFocused ? '#1A4123' : '#3AB655'}}>
+              {label}
+            </Text>
           </TouchableOpacity>
         );
       })}
@@ -130,5 +132,10 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
     alignItems: 'center',
     justifyContent: 'space-between',
+  },
+  containerButton: {
+    flex: 1,
+    flexDirection: 'column',
+    alignItems: 'center',
   },
 });
