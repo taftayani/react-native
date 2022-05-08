@@ -2,12 +2,16 @@ import {StyleSheet, Text, View} from 'react-native';
 import React from 'react';
 import {BodyStyles, Styles} from '../../components/assets/body';
 import Headers from '../../components/Elements/Header/header';
+import CarouselSection from './Section/Carousel';
 
 const Homepage = () => {
   return (
-    <View>
+    <>
       <Headers />
-    </View>
+      <View>
+        <CarouselSection />
+      </View>
+    </>
   );
 };
 

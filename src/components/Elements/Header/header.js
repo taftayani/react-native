@@ -41,11 +41,11 @@ const styles = StyleSheet.create({
     zIndex: 2,
   },
   rowHeader: {
-    flex: 1,
     flexDirection: 'row',
     position: 'relative',
     marginTop: 32,
     padding: 30,
+    height: 100,
   },
   viewIcon: {
     marginLeft: 'auto',

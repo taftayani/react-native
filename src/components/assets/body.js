@@ -43,4 +43,9 @@ export const Styles = StyleSheet.create({
     height: 22,
     marginBottom: 10,
   },
+  textHeader: {
+    fontSize: 20,
+    color: '#362F2F',
+    lineHeight: 24,
+  },
 });
